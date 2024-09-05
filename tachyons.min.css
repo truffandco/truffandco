@@ -865,7 +865,7 @@ img {
 }
 
 .cf {
-	*zoom: 1
+	*zoom: 1;
 }
 
 .cl {
@@ -9117,7 +9117,8 @@ code {
 /* VARIABLES */
 
 :root {
-	--hemlock: #6A6440;
+	/* --hemlock: #6A6440; */
+	--hemlock: #595336;
 	--sycamore: #A49F44;
 	--hot-cinnamon: #E0561A;
 	--gin-fizz: #FFF9E1;
@@ -9137,51 +9138,52 @@ code {
 /* COLORS */
 
 .hemlock {
-	color: var(--hemlock)
+	color: var(--hemlock);
 }
 
 .sycamore {
-	color: var(--sycamore)
+	color: var(--sycamore);
 }
 
 .hot-cinnamon {
-	color: var(--hot-cinnamon)
+	color: var(--hot-cinnamon);
 }
 
 .gin-fizz {
-	color: var(--gin-fizz)
+	color: var(--gin-fizz);
 }
 
 .gold {
-	color: var(--gold)
+	color: var(--gold);
 }
 
 /* BACKGROUND COLORS */
 
 .bg-hemlock {
-	background-color: var(--hemlock)
+	background-color: var(--hemlock);
 }
 
 .bg-sycamore {
-	background-color: var(--sycamore)
+	background-color: var(--sycamore);
 }
 
 .bg-hot-cinnamon {
-	background-color: var(--hot-cinnamon)
+	background-color: var(--hot-cinnamon);
 }
 
 .bg-gin-fizz {
-	background-color: var(--gin-fizz)
+	background-color: var(--gin-fizz);
 }
 
 .bg-gold {
-	background-color: var(--gold)
+	background-color: var(--gold);
 }
 
 /* FILTERS */
 
 .flt-hemlock {
-	filter: invert(37%) sepia(30%) saturate(478%) hue-rotate(14deg) brightness(95%) contrast(89%);
+	/* filter: invert(37%) sepia(30%) saturate(478%) hue-rotate(14deg) brightness(95%) contrast(89%); */
+	filter: invert(30%) sepia(43%) saturate(314%) hue-rotate(12deg) brightness(95%) contrast(95%);
 }
 
 .flt-sycamore {
@@ -9253,19 +9255,19 @@ code {
 /* WIDTH */
 
 .w--3 {
-	width: 3rem
+	width: 3rem;
 }
 
 .w--12 {
-	width: 12rem
+	width: 12rem;
 }
 
 .w--20 {
-	width: 20rem
+	width: 20rem;
 }
 
 @media screen and (min-width:70em) {
 	.w--20-ns {
-		width: 20rem
+		width: 20rem;
 	}
 }
