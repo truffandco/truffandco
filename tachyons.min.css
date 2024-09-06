@@ -9220,10 +9220,6 @@ code {
 
 /* BACKGROUND IMAGE */
 
-.bgi--julie-comete {
-	background-image: url("./assets/images/julie-comete.jpg");
-}
-
 .bgi--comete {
 	background-image: url("./assets/images/comete2.jpg");
 }
@@ -9237,10 +9233,6 @@ code {
 }
 
 /* BACKGROUND POSITION */
-
-.bg-50-30 {
-	background-position: 50% 30%;
-}
 
 .bg-50-60 {
 	background-position: 50% 60%;
