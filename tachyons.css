@@ -9220,22 +9220,12 @@ code {
 
 /* BACKGROUND IMAGE */
 
-.bgi--comete {
-	background-image: url("./assets/images/comete2.webp");
-}
-
 .bgi--green {
 	background-image: url("./assets/images/bg_green.webp");
 }
 
 .bgi--yellow {
 	background-image: url("./assets/images/bg_yellow.webp");
-}
-
-/* BACKGROUND POSITION */
-
-.bg-50-60 {
-	background-position: 50% 60%;
 }
 
 /* HEIGHT */
