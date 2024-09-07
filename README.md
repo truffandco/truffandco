@@ -1,5 +1,6 @@
 + TODO Remove unused CSS and minify
 + TODO Add contact form
++ TODO Provide fallback fonts
 + TODO Add social icons on mobile view
 + TODO Remove 'ma0' from headings ?
 + TODO Add width and height attributes to img

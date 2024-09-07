@@ -9104,13 +9104,13 @@ code {
 
 @font-face {
 	font-family: "Chewy";
-	src: url("./assets/fonts/Chewy/Chewy-Regular.ttf") format("truetype");
+	src: url("./assets/fonts/Chewy/Chewy-Regular.woff2") format("woff2");
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: "Lato";
-	src: url("./assets/fonts/Lato/Lato-Regular.ttf") format("truetype");
+	src: url("./assets/fonts/Lato/Lato-Regular.woff2") format("woff2");
 	font-weight: normal;
 }
 
