@@ -9221,15 +9221,15 @@ code {
 /* BACKGROUND IMAGE */
 
 .bgi--comete {
-	background-image: url("./assets/images/comete2.jpg");
+	background-image: url("./assets/images/comete2.webp");
 }
 
 .bgi--green {
-	background-image: url("./assets/images/bg_green.png");
+	background-image: url("./assets/images/bg_green.webp");
 }
 
 .bgi--yellow {
-	background-image: url("./assets/images/bg_yellow.png");
+	background-image: url("./assets/images/bg_yellow.webp");
 }
 
 /* BACKGROUND POSITION */
