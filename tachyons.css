@@ -267,7 +267,8 @@ ul {
 }
 
 .aspect-ratio--1x1 {
-	padding-bottom: 100%
+	/* padding-bottom: 100% */
+	aspect-ratio: 1 / 1;
 }
 
 .aspect-ratio--object {
@@ -9228,6 +9229,11 @@ code {
 
 .bgi--yellow {
 	background-image: url("./assets/images/bg_yellow.webp");
+}
+
+/* INPUT BORDER */
+input[type=text]:focus {
+	border: 3px solid #555;
 }
 
 /* HEIGHT */

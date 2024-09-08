@@ -16,7 +16,7 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
 	<link rel="manifest" href="/assets/favicon/site.webmanifest">
 	<link rel="shortcut icon" href="/assets/favicon/favicon.ico">
-	<link rel="stylesheet" href="./stylesheet.css">
+	<link rel="stylesheet" href="./tachyons.css">
 	<link rel="preload" href="/assets/images/comete2.webp" as="image" type="image/webp" fetchpriority="high">
 	<link rel="preload" href="/assets/fonts/Chewy/Chewy-Regular.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="/assets/fonts/Lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -55,33 +55,41 @@
 
 	<main class="flex flex-column items-center justify-center w-100">
 
-		<div class="br4 cover mb4 vh-50 w-100" style="background-image: url(/assets/images/comete2.webp); background-position: 50% 60%; aspect-ratio: 1 / 1;"></div>
+		<!-- <div class="br4 cover mb4 vh-50 w-100" style="background-image: url(/assets/images/comete2.webp); background-position: 50% 60%; aspect-ratio: 1 / 1;"></div> -->
 
 		<h1 class="chewy f1-ns f2 lh-title normal tc">Contactez-moi</h1>
 
-		<p class="f4-ns f5 lh-copy mb4 tc w-100 w-80-ns">
+		<p class="f4-ns f5 lh-copy mb4 tl w-100 w-80-ns">
 			Si vous avez la moindre question ou souhaitez faire appel à mes
-			services, je suis joignable par les contacts ci-dessous. Je me
-			ferai un plaisir de vous répondre rapidement !
+			services, vous pouvez me joindre en utilisant le formulaire de
+			contact ci-dessous. Je me ferai un plaisir de vous répondre
+			rapidement !
 		</p>
 
-		<div class="flex flex-column flex-row-m flex-row-ns justify-evenly items-center w-100">
+		<form class="flex flex-column items-start w-80" action="https://api.web3forms.com/submit" method="POST">
 
-			<div class="flex flex-column items-center justify-evenly nowrap">
-				<img class="aspect-ratio--1x1 flt-hot-cinnamon w--3" src="./assets/icons/location.svg" alt="Localisation">
-				<p class="f4-ns f5 lh-copy">Auxerre&nbsp;et&nbsp;ses&nbsp;alentours</p>
-				<img class="aspect-ratio--1x1 flt-hot-cinnamon w--3" src="./assets/icons/clock.svg" alt="Horaires">
-				<p class="f4-ns f5 lh-copy">Lundi&nbsp;:&nbsp;14h-18h&nbsp;/&nbsp;Mardi&nbsp;-&nbsp;Samedi&nbsp;:&nbsp;9h-18h</p>
-			</div>
+			<!-- Replace with your Access Key -->
+			<input type="hidden" name="access_key" value="211ec2d4-d06d-4c8c-aee6-c07341acaf4e">
 
-			<div class="flex flex-column items-center justify-evenly nowrap">
-				<img class="aspect-ratio--1x1 flt-hot-cinnamon w--3" src="./assets/icons/phone.svg" alt="Téléphone">
-				<p class="f4-ns f5 lh-copy">07.63.43.75.17</p>
-				<img class="aspect-ratio--1x1 flt-hot-cinnamon w--3" src="./assets/icons/email.svg" alt="Email">
-				<p><a class="f4-ns f5 hemlock lh-copy" href="mailto:contact.truffandco@gmail.com">contact.truffandco@gmail.com</a></p>
-			</div>
+			<!-- Form Inputs. Each input must have a name="" attribute -->
+			<label class="f4-ns f5 lh-copy" for="name">Votre nom</label>
+			<input class="mv3 w-25" type="text" id="name" name="name" required>
 
-		</div>
+			<label class="f4-ns f5 lh-copy" for="email">Votre adresse email</label>
+			<input class="mv3 w-25" type="email" id="email" name="email" required>
+
+			<label class="f4-ns f5 lh-copy" for="message">Votre message</label>
+			<textarea class="mv3 w-60 h5" id="message" name="message" required></textarea>
+
+			<!-- Honeypot Spam Protection -->
+			<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+			<!-- Custom Confirmation / Success Page -->
+			<input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html">
+
+			<button class="bg-hemlock bn br-pill f5-ns f7 gin-fizz pa3 pointer tc ttu mv3" type="submit">Envoyer</button>
+
+		</form>
 
 	</main>
 
