@@ -17,6 +17,7 @@
 	<link rel="manifest" href="/assets/favicon/site.webmanifest">
 	<link rel="shortcut icon" href="/assets/favicon/favicon.ico">
 	<link rel="stylesheet" href="./tachyons.css">
+	<link rel="preload" href="/assets/images/comete2.webp" as="image" type="image/webp" fetchpriority="high">
 	<link rel="preload" href="/assets/fonts/Chewy/Chewy-Regular.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="/assets/fonts/Lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
 	<title>Nous contacter - Truff' and Co</title>
@@ -54,44 +55,11 @@
 
 	<main class="flex flex-column items-center justify-center w-100">
 
-		<h1 class="chewy f1-ns f2 lh-title normal tc">Contactez-moi</h1>
+		<div class="br4 cover mb4 vh-50 w-100" style="background-image: url(/assets/images/comete2.webp); background-position: 50% 60%; aspect-ratio: 1 / 1;"></div>
 
-		<p class="f4-ns f5 lh-copy mb4 tl w-100 w-90-ns">
-			Si vous avez la moindre question ou souhaitez faire appel à mes
-			services, vous pouvez me joindre en utilisant le formulaire de
-			contact ci-dessous ou bien grâce aux coordonnées en bas de
-			page. Je me ferai un plaisir de vous répondre dans les plus
-			brefs délais !
-		</p>
+		<h1 class="chewy f1-ns f2 lh-title normal tc">Merci pour votre message !</h1>
 
-		<div class="flex justify-evenly w-90">
-
-			<form class="flex flex-column items-start w-100" action="https://api.web3forms.com/submit" method="POST">
-
-				<!-- Replace with your Access Key -->
-				<input type="hidden" name="access_key" value="a8d4b5d0-b78f-45a8-acbd-325ae6562d85">
-
-				<!-- Form Inputs. Each input must have a name="" attribute -->
-				<label class="chewy f3-ns f4 lh-copy" for="name">Votre nom</label>
-				<input class="b--hot-cinnamon ba bb2 mv3 w-40-ns w-100" type="text" id="name" name="name" required>
-
-				<label class="chewy f3-ns f4 lh-copy" for="email">Votre adresse email</label>
-				<input class="b--hot-cinnamon ba bb2 mv3 w-40-ns w-100" type="email" id="email" name="email" required>
-
-				<label class="chewy f3-ns f4 lh-copy" for="message">Votre message</label>
-				<textarea class="b--hot-cinnamon ba bb2 h5 mv3 w-100 w-80-ns" id="message" name="message" required></textarea>
-
-				<!-- Honeypot Spam Protection -->
-				<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-				<!-- Custom Confirmation / Success Page -->
-				<input type="hidden" name="redirect" value="https://truffandco.github.io/thanks.html">
-
-				<button class="bg-hemlock bn br-pill f5-ns f7 gin-fizz pa3 pointer tc ttu mv3 self-start" type="submit">Envoyer</button>
-
-			</form>
-
-		</div>
+		<a class="f3-ns f4 mv3 hemlock" href="/index.html">Cliquez ici pour retourner à l'acceuil</a>
 
 	</main>
 
