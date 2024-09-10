@@ -9215,6 +9215,14 @@ code {
 	border-color: var(--hot-cinnamon);
 }
 
+/* INPUT FOCUS */
+
+textarea:focus,
+input:focus {
+	outline: none;
+	border: 3px solid var(--hemlock);
+}
+
 /* FLEXBOX */
 
 .justify-evenly {
@@ -9231,15 +9239,15 @@ code {
 	background-image: url("./assets/images/bg_yellow.webp");
 }
 
-/* INPUT BORDER */
-input[type=text]:focus {
-	border: 3px solid #555;
-}
-
 /* HEIGHT */
 
 .vh-35 {
 	height: 35vh;
+}
+
+/* BORDER SIZE */
+.bb2 {
+	border-width: 2px;
 }
 
 /* WIDTH */
