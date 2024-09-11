@@ -9220,7 +9220,7 @@ code {
 textarea:focus,
 input:focus {
 	outline: none;
-	border: 3px solid var(--hemlock);
+	border: 3px solid var(--hot-cinnamon);
 }
 
 /* FLEXBOX */
